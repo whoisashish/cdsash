@@ -1,3 +1,13 @@
+*{
+  box-sizing: border-box;  
+  font-weight: 800;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 .App {
   text-align: center;
 }
@@ -13,8 +23,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-header {  
+  background-color: #dbdcca;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +38,41 @@
   color: #61dafb;
 }
 
+.center_keeper{
+  width: 100%;
+  padding: 20px;
+  max-width: 400px;
+  position: relative;
+}
+
+.home_center_logo{
+  width: 90%;
+}
+
+.logo_title{
+  font-family: 'Bungee Inline', cursive;
+  color: black;
+  -webkit-text-stroke: 2px white;
+  font-size: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  font-weight: 400;
+}
+
+.logo_desc{
+  color: black;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+.abs_holders{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +80,81 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 40px;
+  z-index: 10;
+  height: 100px;
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  z-index: 10;
+  height: 100px;
+}
+
+.footer img{
+  width: 100%;
+}
+
+.header-items{
+  padding: 20px;
+}
+
+.footer-items{
+  padding: 0 20px;
+  width: 80px;
+}
+
+#main-content{
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.start_to_study{
+  color: black;
+  margin-top: 50px;
+}
+
+.arrow{
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.arrow-in{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #e62429;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  cursor: pointer;
+  transition: all .1s ease-in;
+}
+
+.arrow-in:hover{
+  transform: scale(1.1);
 }
